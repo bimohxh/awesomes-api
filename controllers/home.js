@@ -5,7 +5,6 @@ module.exports = {
   get_repos: (req, res) => {
     let limit = Math.min((req.query.limit || 10), 20)
     let skip = parseInt(req.query.skip || 0)
-    console.log(limit, skip)
     let where = {}
     let query = {
       limit: limit,
